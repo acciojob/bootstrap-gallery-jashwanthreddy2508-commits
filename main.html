@@ -1,15 +1,183 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="container my-4">
+        <h2 class="text-center mb-4">Camera Gallery</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
+                        class="card-img-top"
+                        alt="Image 1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 1</h5>
+                        <p class="card-text">This is the first camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg"
+                        class="card-img-top"
+                        alt="Image 2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 2</h5>
+                        <p class="card-text">This is the second camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg"
+                        class="card-img-top"
+                        alt="Image 3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 3</h5>
+                        <p class="card-text">This is the third camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg"
+                        class="card-img-top"
+                        alt="Image 4"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 4</h5>
+                        <p class="card-text">This is the fourth camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg"
+                        class="card-img-top"
+                        alt="Image 5"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 5</h5>
+                        <p class="card-text">This is the fifth camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg"
+                        class="card-img-top"
+                        alt="Image 6"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 6</h5>
+                        <p class="card-text">This is the sixth camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
+                        class="card-img-top"
+                        alt="Image 7"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 7</h5>
+                        <p class="card-text">This is the seventh camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg"
+                        class="card-img-top"
+                        alt="Image 8"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 8</h5>
+                        <p class="card-text">This is the eighth camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg"
+                        class="card-img-top"
+                        alt="Image 9"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        onclick="showImage(this.src)">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 9</h5>
+                        <p class="card-text">This is the ninth camera image.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 bg-transparent">
+                <div class="modal-body text-center">
+                    <img id="lightboxImage" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showImage(src) {
+            document.getElementById("lightboxImage").src = src;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 
 </body>
 
